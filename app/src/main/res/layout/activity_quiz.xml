@@ -74,7 +74,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter name"
+            android:hint="e.g David De Gea"
             android:inputType="textCapWords"
             android:id="@+id/question2_answer"
             android:fontFamily="sans-serif-condensed"
@@ -209,7 +209,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter text"
+            android:hint="e.g Goalkeeper"
             android:inputType="textCapWords"
             android:id="@+id/question6_answer"
             android:fontFamily="sans-serif-condensed"
@@ -293,7 +293,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter text"
+            android:hint="e.g playing"
             android:id="@+id/question9_answer"
             android:textColor="@color/colorPrimaryDark"
             android:fontFamily="sans-serif-condensed"

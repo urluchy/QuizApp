@@ -32,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="First name"
+        android:inputType="textCapWords"
         android:layout_marginTop="40dp"
         android:id="@+id/first_name"/>
 
@@ -39,6 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Last name"
+        android:inputType="textCapWords"
         android:layout_marginTop="20dp"
         android:id="@+id/last_name"/>
 
@@ -55,7 +57,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Copyright 2019"
+        android:text="Copyright 2019 All Rights Reserved."
         android:textColor="@color/colorPrimary"
         android:layout_marginTop="100dp"/>
 
