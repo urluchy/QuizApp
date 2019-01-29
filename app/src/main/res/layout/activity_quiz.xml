@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Who was the most decorated Manchester United manager?"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:textSize="15sp"/>
+        
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sir Alex Ferguson"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/question1_answer"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ole Gunnar Solksjaer"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wayne Rooney"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jose Mourinho"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Who scored the first goal against Arsenal FC in their match on the 28th of January, 2019"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name"
+            android:inputType="textCapWords"
+            android:id="@+id/question2_answer"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="3. What year did David De Gea make his debut appearance in Manchester United FC?"
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/question3_answer"
+            android:hint="Enter year"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="4. Select the players that scored for the team against Reading on the 5th of January, 2019"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paul Pogba"
+            android:id="@+id/question4_wronganswer1"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juan Mata"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/question4_firstanswer"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ander Herrera"
+            android:textSize="15sp"
+            android:id="@+id/question4_wronganswer2"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Romelu Lukaku"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:id="@+id/question4_secondanswer"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="5. How many forwards are in the Manchester United first team?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:fontFamily="serif"/>
+        
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group2">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:id="@+id/question5_answer"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. What part does Anthony Martial play in the first team?"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text"
+            android:inputType="textCapWords"
+            android:id="@+id/question6_answer"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. What year was Jose Mourinho sacked from the team?"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:fontFamily="serif"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter year"
+            android:id="@+id/question7_answer"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="8. Select the teams that Manchester United played against in January 2019"
+            android:fontFamily="serif"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spurs"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:id="@+id/question8_firstanswer"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chelsea"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:id="@+id/question8_wronganswer1"
+            android:fontFamily="sans-serif-condensed" />
+        
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:id="@+id/question8_secondanswer"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Arsenal"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:id="@+id/question8_wronganswer2"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Cardiff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="9. What is Jesse Lingard well known for among the fans?"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text"
+            android:id="@+id/question9_answer"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="10. What is the official moniker of the Manchester United team?"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text"
+            android:id="@+id/question10_answer"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#794044"
+            android:text="Submit answers"
+            android:id="@+id/answer_btn"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Quiz App"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test your knowledge..."
+        android:textColor="#794044"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First name"
+        android:layout_marginTop="40dp"
+        android:id="@+id/first_name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last name"
+        android:layout_marginTop="20dp"
+        android:id="@+id/last_name"/>
+
+    <Button
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#794044"
+        android:text="Start Quiz"
+        android:textColor="#000"
+        android:id="@+id/start_btn"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright 2019"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="100dp"/>
+
+
+
+</LinearLayout>
