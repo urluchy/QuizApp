@@ -8,6 +8,9 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -38,6 +41,7 @@ public class QuizActivity extends AppCompatActivity {
     public EditText Question10Answer;
     final String QuestionTenAnswer = "Red Devils";
     public Button answerButton;
+    ArrayList<String> incorrectAnswers = new ArrayList<>();
 
 
 
@@ -69,6 +73,11 @@ public class QuizActivity extends AppCompatActivity {
         answerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                checkQuiz();
+
+                Toast.makeText(QuizActivity.this, , Toast.LENGTH_SHORT).show();
+
 
             }
         });
@@ -147,6 +156,75 @@ public class QuizActivity extends AppCompatActivity {
     private boolean checkQuestionTen(){
         Question10Answer.getText().toString().equalsIgnoreCase(QuestionTenAnswer);
         return true;
+    }
+
+    public void checkQuiz(){
+
+        int correctAnswers = 0;
+
+        if (checkQuestionOne()){
+            correctAnswers ++;
+        }else {
+            incorrectAnswers.add("Question 1");
+        }
+
+        if (checkQuestionTwo()){
+            correctAnswers ++;
+        }else{
+            incorrectAnswers.add("Question 2");
+        }
+
+        if (checkQuestionThree()){
+            correctAnswers ++;
+        }else {
+            incorrectAnswers.add("Question 3");
+        }
+
+        if (checkQuestionFour()){
+            correctAnswers ++;
+        }else {
+            incorrectAnswers.add("Question 4");
+        }
+
+        if (checkQuestionFive()){
+            correctAnswers ++;
+        }else {
+            incorrectAnswers.add("Question 5");
+        }
+
+        if (checkQuestionSix()){
+            correctAnswers ++;
+        }else {
+            incorrectAnswers.add("Question 6");
+        }
+
+        if (checkQuestionSeven()){
+            correctAnswers ++;
+        }else {
+            incorrectAnswers.add("Question 7");
+        }
+
+        if (checkQuestionEight()){
+            correctAnswers ++;
+        }else {
+            incorrectAnswers.add("Question 8");
+        }
+
+        if (checkQuestionNine()){
+            correctAnswers ++;
+        }else {
+            incorrectAnswers.add("Question 9");
+        }
+
+        if (checkQuestionTen()){
+            correctAnswers ++;
+        }else {
+            incorrectAnswers.add("Question 10");
+
+        }
+
+
+
     }
 
 
