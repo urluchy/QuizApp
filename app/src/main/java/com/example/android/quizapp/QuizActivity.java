@@ -18,7 +18,7 @@ public class QuizActivity extends AppCompatActivity {
     final int QuestionOneAnswer = R.id.question1_answer;
     public RadioButton Question1Answer;
     public EditText Question2Answer;
-    final String QuestionTwoAnswer = "Alexis Sanchez";
+    final String QuestionTwoAnswer = "Alexis Sanchez  ";
     public EditText Question3Answer;
     final String QuestionThreeAnswer = "2011";
     public CheckBox Question4FirstAnswer;
@@ -41,7 +41,7 @@ public class QuizActivity extends AppCompatActivity {
     public EditText Question10Answer;
     final String QuestionTenAnswer = "Red Devils";
     public Button answerButton;
-    ArrayList<String> incorrectAnswers = new ArrayList<>();
+    ArrayList<String> incorrectAnswers = new ArrayList<String>();
 
 
 
@@ -76,7 +76,17 @@ public class QuizActivity extends AppCompatActivity {
 
                 checkQuiz();
 
-                Toast.makeText(QuizActivity.this, , Toast.LENGTH_SHORT).show();
+                String results = "";
+
+                for (String string : incorrectAnswers){
+
+                    results = results + "\n" + string;
+
+                }
+
+                CharSequence text = "You failed " + results;
+
+                Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
 
 
             }
@@ -95,14 +105,14 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private boolean checkQuestionTwo(){
-        Question2Answer.getText().toString().equalsIgnoreCase(QuestionTwoAnswer);
-        return true;
+
+        return Question2Answer.getText().toString().equalsIgnoreCase(QuestionTwoAnswer);
 
     }
 
     private boolean checkQuestionThree(){
-        Question3Answer.getText().toString().equalsIgnoreCase(QuestionThreeAnswer);
-        return true;
+        return Question3Answer.getText().toString().equalsIgnoreCase(QuestionThreeAnswer);
+
     }
 
     private boolean checkQuestionFour(){
@@ -127,13 +137,13 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private boolean checkQuestionSix(){
-        Question6Answer.getText().toString().equalsIgnoreCase(QuestionSixAnswer);
-        return true;
+        return Question6Answer.getText().toString().equalsIgnoreCase(QuestionSixAnswer);
+
     }
 
     private boolean checkQuestionSeven(){
-        Question7Answer.getText().toString().equalsIgnoreCase(QuestionSevenAnswer);
-        return true;
+        return Question7Answer.getText().toString().equalsIgnoreCase(QuestionSevenAnswer);
+
     }
 
     private boolean checkQuestionEight(){
@@ -149,13 +159,13 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private boolean checkQuestionNine(){
-        Question9Answer.getText().toString().equalsIgnoreCase(QuestionNineAnswer);
-        return true;
+        return Question9Answer.getText().toString().equalsIgnoreCase(QuestionNineAnswer);
+
     }
 
     private boolean checkQuestionTen(){
-        Question10Answer.getText().toString().equalsIgnoreCase(QuestionTenAnswer);
-        return true;
+        return Question10Answer.getText().toString().equalsIgnoreCase(QuestionTenAnswer);
+
     }
 
     public void checkQuiz(){
